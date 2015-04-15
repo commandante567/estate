@@ -1,0 +1,172 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'react-slider' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 silly cache add args [ 'react-slider', null ]
+6 verbose cache add spec react-slider
+7 silly cache add parsed spec { raw: 'react-slider',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'react-slider',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed react-slider@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'react-slider', range: '*', hasData: false }
+12 silly mapToRegistry name react-slider
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/react-slider
+16 verbose addNameRange registry:https://registry.npmjs.org/react-slider not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/react-slider
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 14:33:53
+20 verbose request id fb471398ca9cf912
+21 http request GET https://registry.npmjs.org/react-slider
+22 http 200 https://registry.npmjs.org/react-slider
+23 silly get cb [ 200,
+23 silly get   { date: 'Sun, 12 Apr 2015 11:33:56 GMT',
+23 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"7UEQSINLHJB4EZ6JHYWTREP4Z"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '18908',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     'x-served-by': 'cache-ams4145-AMS',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1428838435.666535,VS0,VE876',
+23 silly get     vary: 'Accept',
+23 silly get     'keep-alive': 'timeout=10, max=50',
+23 silly get     connection: 'Keep-Alive' } ]
+24 verbose get saving react-slider to C:\Users\Егор\AppData\Roaming\npm-cache\registry.npmjs.org\react-slider\.cache.json
+25 silly addNameRange number 2 { name: 'react-slider', range: '*', hasData: true }
+26 silly addNameRange versions [ 'react-slider',
+26 silly addNameRange   [ '0.1.0',
+26 silly addNameRange     '0.1.1',
+26 silly addNameRange     '0.1.2',
+26 silly addNameRange     '0.2.1',
+26 silly addNameRange     '0.2.2',
+26 silly addNameRange     '0.3.0',
+26 silly addNameRange     '0.3.1',
+26 silly addNameRange     '0.3.2',
+26 silly addNameRange     '0.3.3',
+26 silly addNameRange     '0.3.4',
+26 silly addNameRange     '0.4.0',
+26 silly addNameRange     '0.4.1',
+26 silly addNameRange     '0.4.2' ] ]
+27 verbose addNamed react-slider@0.4.2
+28 silly addNamed semver.valid 0.4.2
+29 silly addNamed semver.validRange 0.4.2
+30 silly mapToRegistry name react-slider
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/react-slider
+34 verbose addRemoteTarball https://registry.npmjs.org/react-slider/-/react-slider-0.4.2.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-slider/-/react-slider-0.4.2.tgz',
+35 verbose addRemoteTarball   'feb2a9e786a3fa12d6744e1e0ca9e0713d34f4b8' ]
+36 info retry fetch attempt 1 at 14:33:55
+37 info attempt registry request try #1 at 14:33:55
+38 http fetch GET https://registry.npmjs.org/react-slider/-/react-slider-0.4.2.tgz
+39 http fetch 200 https://registry.npmjs.org/react-slider/-/react-slider-0.4.2.tgz
+40 silly fetchAndShaCheck shasum feb2a9e786a3fa12d6744e1e0ca9e0713d34f4b8
+41 verbose addTmpTarball C:\Users\A946~1\AppData\Local\Temp\npm-8476-e659a5c1\registry.npmjs.org\react-slider\-\react-slider-0.4.2.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for react-slider@0.4.2
+43 silly cache afterAdd react-slider@0.4.2
+44 verbose afterAdd C:\Users\Егор\AppData\Roaming\npm-cache\react-slider\0.4.2\package\package.json not in flight; writing
+45 verbose afterAdd C:\Users\Егор\AppData\Roaming\npm-cache\react-slider\0.4.2\package\package.json written
+46 silly install resolved [ { name: 'react-slider',
+46 silly install resolved     version: '0.4.2',
+46 silly install resolved     description: 'Slider component for React',
+46 silly install resolved     main: 'react-slider.js',
+46 silly install resolved     keywords: [ 'react-component', 'react', 'slider', 'component' ],
+46 silly install resolved     author: { name: 'Michał Powaga', email: 'michalpowaga13@gmail.com' },
+46 silly install resolved     contributors: [ [Object] ],
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'https://github.com/mpowaga/react-slider.git' },
+46 silly install resolved     peerDependencies: { react: '>=0.12.1' },
+46 silly install resolved     gitHead: '269cabbb4dae33e8c357b525b21fb1ecebf1d429',
+46 silly install resolved     bugs: { url: 'https://github.com/mpowaga/react-slider/issues' },
+46 silly install resolved     homepage: 'https://github.com/mpowaga/react-slider',
+46 silly install resolved     _id: 'react-slider@0.4.2',
+46 silly install resolved     _shasum: 'feb2a9e786a3fa12d6744e1e0ca9e0713d34f4b8',
+46 silly install resolved     _from: 'react-slider@*',
+46 silly install resolved     _npmVersion: '2.5.1',
+46 silly install resolved     _nodeVersion: '0.12.0',
+46 silly install resolved     _npmUser: { name: 'mpowaga', email: 'michalpowaga13@gmail.com' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: 'feb2a9e786a3fa12d6744e1e0ca9e0713d34f4b8',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/react-slider/-/react-slider-0.4.2.tgz' },
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/react-slider/-/react-slider-0.4.2.tgz' } ]
+47 info install react-slider@0.4.2 into C:\wamp\www\estate
+48 info installOne react-slider@0.4.2
+49 verbose installOne of react-slider to C:\wamp\www\estate not in flight; installing
+50 verbose lock using C:\Users\Егор\AppData\Roaming\npm-cache\_locks\react-slider-a293808dd6072008.lock for C:\wamp\www\estate\node_modules\react-slider
+51 silly install write writing react-slider 0.4.2 to C:\wamp\www\estate\node_modules\react-slider
+52 silly cache addNamed cb react-slider@0.4.2
+53 verbose unbuild node_modules\react-slider
+54 verbose gentlyRm vacuuming C:\wamp\www\estate\node_modules\react-slider
+55 verbose tar unpack C:\Users\Егор\AppData\Roaming\npm-cache\react-slider\0.4.2\package.tgz
+56 verbose tar unpacking to C:\wamp\www\estate\node_modules\react-slider
+57 verbose gentlyRm vacuuming C:\wamp\www\estate\node_modules\react-slider
+58 silly gunzTarPerm modes [ '777', '666' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+61 silly gunzTarPerm extractEntry .npmignore
+62 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+63 silly gunzTarPerm extractEntry README.md
+64 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+65 silly gunzTarPerm extractEntry LICENSE
+66 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+67 silly gunzTarPerm extractEntry react-slider.js
+68 silly gunzTarPerm modified mode [ 'react-slider.js', 420, 438 ]
+69 silly gunzTarPerm extractEntry bower.json
+70 silly gunzTarPerm modified mode [ 'bower.json', 420, 438 ]
+71 silly gunzTarPerm extractEntry index.html
+72 silly gunzTarPerm modified mode [ 'index.html', 420, 438 ]
+73 info preinstall react-slider@0.4.2
+74 silly install resolved []
+75 verbose about to build C:\wamp\www\estate\node_modules\react-slider
+76 info build C:\wamp\www\estate\node_modules\react-slider
+77 verbose linkStuff [ false, false, false, 'C:\\wamp\\www\\estate\\node_modules' ]
+78 info linkStuff react-slider@0.4.2
+79 verbose linkBins react-slider@0.4.2
+80 verbose linkMans react-slider@0.4.2
+81 verbose rebuildBundles react-slider@0.4.2
+82 info install react-slider@0.4.2
+83 info postinstall react-slider@0.4.2
+84 verbose unlock done using C:\Users\Егор\AppData\Roaming\npm-cache\_locks\react-slider-a293808dd6072008.lock for C:\wamp\www\estate\node_modules\react-slider
+85 verbose stack Error: The package react does not satisfy its siblings' peerDependencies requirements!
+85 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:103:32
+85 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:225:5
+85 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:138:5
+85 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+85 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+85 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+85 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+85 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+85 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+85 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+86 verbose cwd C:\wamp\www\estate
+87 error Windows_NT 6.3.9600
+88 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "react-slider"
+89 error node v0.12.0
+90 error npm  v2.5.1
+91 error code EPEERINVALID
+92 error peerinvalid The package react does not satisfy its siblings' peerDependencies requirements!
+92 error peerinvalid Peer react-addons@0.9.1-deprecated wants react@>= 0.9.0
+92 error peerinvalid Peer react-range-slider@0.0.11 wants react@0.12.x
+92 error peerinvalid Peer react-slider@0.4.2 wants react@>=0.12.1
+93 verbose exit [ 1, true ]

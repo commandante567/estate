@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "devDependencies": {
+    "coffee-reactify": "^3.0.0",
+    "flux": "^2.0.1",
+    "gulp": "^3.8.8",
+    "keymirror": "^0.1.1",
+    "laravel-elixir": "*",
+    "microevent-mistic100": "^2.1.1",
+    "object-assign": "^2.0.0",
+    "react-addons": "^0.9.1-deprecated",
+    "react-infinite-scroll": "^0.1.5",
+    "react-paginate": "^0.1.21"
+  },
+  "dependencies": {
+    "laravel-elixir-browserify": "^0.7.0",
+    "laravel-elixir-compass": "^0.2.1",
+    "react": "^0.13.1",
+    "reactify": "^1.1.0"
+  }
+}

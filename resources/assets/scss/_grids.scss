@@ -1,0 +1,51 @@
+// Requirements
+// ============
+
+@import "susy";
+
+$susy: (
+  columns: 12,
+  global-box-sizing: border-box,
+  use-custom: (rem: true
+    ),
+  );
+
+@include border-box-sizing;
+
+.container {
+  @include container(1000px);
+}
+
+.sidebar {
+    @include span(3 of 12 last);
+}
+
+.inner-content {
+    @include span(9 of 12);
+}
+
+.main-header {
+    .logo {
+        @include span(3 of 12);
+    }
+    .main-nav {
+        @include span(6 of 12);
+    }
+    .contacts {
+        @include span(3 of 12 last); 
+    }
+}
+
+.form-control-rooms {
+  @include span(5 of 12);
+}
+.form-control-type {
+  @include span(7 of 12 last);
+}
+
+.item-info {
+   @include span(4 of 8);
+}
+.item-meta{
+  @include span(4 of 8 last);
+}
