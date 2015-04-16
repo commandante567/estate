@@ -59,7 +59,7 @@ module.exports = {
         dataType: 'json',
         type: 'POST',
         data:{
-            road:query.road,
+            road:JSON.stringify(query.road),
             room:JSON.stringify(query.room),
              '_token': $('meta[name=csrf-token]').attr('content'),
             min_price:query.min_price,
@@ -88,7 +88,7 @@ module.exports = {
             },
         data: {
             '_token': $('meta[name=csrf-token]').attr('content'),
-            road:query.road,
+            road:JSON.stringify(query.road),
             room:JSON.stringify(query.room),
             page:query.page+1,
             min_price:query.min_price,

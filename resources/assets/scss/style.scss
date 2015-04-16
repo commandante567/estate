@@ -238,7 +238,55 @@ $left-bar_width : 86px;
 }
 
 .form-control-adress {
+    position:relative; 
+
+    .clear-road {
+    position: absolute;
+    right: 12px;
+    top: 5px;
+    text-decoration: none;
+    z-index: 10000;
+    color: #888;
+    }
+    .auto-box {
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background-color:white;
+        border-left:1px solid #eee;
+        border-right:1px solid #eee;
+        border-bottom:1px solid #eee;
+        border-radius: 0 0 5px 5px;
+        z-index: 999;
+        max-height: 270px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        ul {
+            margin:0;
+            padding:0;
+            list-style:none;
+            li {
+                border-bottom:1px solid #eee;
+                padding:10px;
+                a {
+                    text-decoration:none;
+                    color:darken($green,38);
+
+                    &.hover {
+                        text-decoration:underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .hidden {
+        display:none;
+    }
 }
+
+
 
 .form-label {
   padding-left:5px;

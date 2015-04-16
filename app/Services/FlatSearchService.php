@@ -16,6 +16,13 @@ class FlatSearchService {
 
         $baseQuery = Flat::take($limit);
 
+
+        $wordlist = array("площадь", "проспект", "канал", "институт", "завод", "речка", "ворота", "парк", "невского", "улица", "деревня" , "остров");
+
+        foreach ($wordlist as &$word) {
+            $word = '/\b' . preg_quote($word, '/') . '\b/';
+        }
+
         if($rooms) {
             $l = json_decode($rooms,true);
             if(!empty($l)) {
@@ -29,8 +36,10 @@ class FlatSearchService {
         }
 
         if($road){
+            $l = json_decode($road, true);
+            $l = preg_replace($wordlist, '', $l);
             $baseQuery->where('road', '!=', '')
-                      ->where('road','LIKE', "%$road%");
+                      ->where('road','LIKE', "%$l%");
         }
 
         
