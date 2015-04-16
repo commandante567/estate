@@ -4,7 +4,8 @@ module.exports = {
     
     ServerApiUrl: ({
         URL: '/api/flats/search',
-        ID: '/api/flats/id'
+        ID: '/api/flats/id',
+        CALL_BACK: '/api/mail/callback'
         }),
 
     ActionTypes: keyMirror ({
@@ -14,7 +15,8 @@ module.exports = {
         SHOW_LIST : null,
         SEARCH_FLAT : null,
         GET_MORE : null,
-        TAKE_MORE : null
+        TAKE_MORE : null,
+        CALL_BACK_SEND : null
         
         })
 

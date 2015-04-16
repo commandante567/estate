@@ -4,6 +4,8 @@ var SearchSection = require('./SearchSection.jsx');
 var ShowSection = require('./ShowSection.jsx');
 var ShowStore = require('../stores/ShowStore.jsx');
 var IntroSection = require('./IntroSection.jsx');
+var SideMenu = require('./SideMenu.jsx');
+
 
 function getIntroFromStores() {
     var state = ShowStore.getIntro();
@@ -15,6 +17,9 @@ function getIntroFromStores() {
 
 var FlatApp = React.createClass({
 
+    contextTypes: {
+        router: React.PropTypes.func
+      },
 
     getInitialState:function() {
         return getIntroFromStores();
@@ -37,19 +42,24 @@ var FlatApp = React.createClass({
             showSection = <IntroSection />;
         }
         return (
-
+        <div className="main-wrap"> 
+            <SideMenu />
+        <section className="app">
             <div className="flats-app">
                 
                 <div className="left-section">
                     <SearchSection />
                 </div>
                 <div className="right-section">
+                   
                     { showSection }
                      <div id="flat-loading">
                         <i className="loader"></i>
                     </div>
                 </div>
             </div>
+        </section>
+        </div>
         );
     },
 

@@ -36,6 +36,14 @@ module.exports = {
             query: query
             });
         FlatWebAPIUtils.getMoreFlats(query);
-    }
+    },
+
+    callBack : function(query) {
+        FlatAppDispather.dispatch({
+            type: ActionTypes.CALL_BACK_SEND,
+            query: query
+            });
+        FlatWebAPIUtils.callBackSend(query);
+        }
 
 };

@@ -4,6 +4,10 @@ use App\Http\Controllers\Controller;
 use App\Flat;
 use App\Services\FlatSearchService;
 use App\Http\Requests\FlatRequest;
+use Request;
+use Validator;
+use Mail;
+use Illuminate\Http\Response;
 
 class ApiController extends Controller {
 
@@ -129,4 +133,31 @@ class ApiController extends Controller {
         }
         return $flats;
     }
+
+    public function callBack(){
+
+        $rules = array(
+            'name'             => 'required',                        // just a normal required validation
+            'phone'            => 'required'
+        ); 
+
+        $validator = Validator::make(Request::all(), $rules);
+
+        if ($validator->fails()) {
+                $message = $validator->messages()->toJson();
+        } else {
+                $message  = response()->json(['status' => 'ok', 'message' => 'All OK']);
+
+                $data = Request::all();
+
+                Mail::queue('emails.callback', $data, function($message)
+                    {
+                        $message->to('egor.semenof@yandex.ru', 'John Smith')
+                            ->from('egor.semenof@yandex.ru')
+                            ->subject('Welcome!');
+                    });
+        }
+                return $message;
+    }
+
 }

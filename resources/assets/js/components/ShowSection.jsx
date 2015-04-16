@@ -1,6 +1,8 @@
 var React = require('react');
 var ShowStore = require('../stores/ShowStore.jsx');
 var ShowMap = require('./ShowMap.jsx');
+var CallForm = require('./CallForm.jsx');
+
 
 function getStateFromStores() {
 
@@ -48,6 +50,11 @@ var ShowSection = React.createClass({
         var type = typeFormat(this.state.type);
         return (
                  <div className="item">
+                     <div id="call-back-wrap">
+                        <CallForm 
+                            id={this.state.id}
+                        />
+                    </div>
                  <div className="item-header cf">
                     <div className="header-logo">
                       <img src="/img/small_logo.png" alt="Домашнее"/>
@@ -132,7 +139,7 @@ var ShowSection = React.createClass({
                             <td><a href="#"><img src="/img/icons/skype.png" alt="Skype" title="Skype"/></a></td>
                           </tr>
                           <tr>
-                            <td colSpan="3" className="call-back"><a href="#">Обратный звонок</a></td>
+                            <td colSpan="3" className="call-back"><a href="#call-back" onClick={this._handleCallBack}>Обратный звонок</a></td>
                           </tr>
                         </table>
                       </div>
@@ -151,7 +158,12 @@ var ShowSection = React.createClass({
 
     _onChange: function() {
         this.setState(getStateFromStores());
-    }
+    },
+
+    _handleCallBack: function(event) {
+        event.preventDefault;
+        $('#call-back-wrap').show();
+        }
 
 });
 

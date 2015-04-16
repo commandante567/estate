@@ -742,7 +742,7 @@ h1, h2, h3, h4, h5 {
 .flats-app .right-section {
   min-width: 790px;
   margin-left: 480px;
-  padding: 10px 40px;
+  padding: 0px 40px;
   height: 100%;
   top: 0px;
   position: fixed; }
@@ -922,7 +922,7 @@ input#adress {
   width: 100%; }
 
 /* line 348, ../../resources/assets/scss/style.scss */
-input[type="text"] {
+input[type="text"], input[type="phone"], textarea {
   border: 1px solid #a4e5df;
   padding: 7px 5px;
   font-size: 14px;
@@ -1082,49 +1082,53 @@ ul.type-list li.active a {
         color: #0f3430; }
 
 /* SHOW SECTION*/
-/* line 540, ../../resources/assets/scss/style.scss */
+/* line 539, ../../resources/assets/scss/style.scss */
+.item {
+  padding-top: 10px; }
+
+/* line 544, ../../resources/assets/scss/style.scss */
 .item-header img {
   width: 160px;
   height: 60px;
   float: left;
   display: inline-block; }
-/* line 550, ../../resources/assets/scss/style.scss */
+/* line 554, ../../resources/assets/scss/style.scss */
 .item-header .social-icons {
   float: right; }
-  /* line 552, ../../resources/assets/scss/style.scss */
+  /* line 556, ../../resources/assets/scss/style.scss */
   .item-header .social-icons ul {
     text-align: right;
     margin-top: 16px; }
-    /* line 555, ../../resources/assets/scss/style.scss */
+    /* line 559, ../../resources/assets/scss/style.scss */
     .item-header .social-icons ul li {
       padding: 0 7px; }
-      /* line 557, ../../resources/assets/scss/style.scss */
+      /* line 561, ../../resources/assets/scss/style.scss */
       .item-header .social-icons ul li a {
         text-decoration: none; }
-        /* line 559, ../../resources/assets/scss/style.scss */
+        /* line 563, ../../resources/assets/scss/style.scss */
         .item-header .social-icons ul li a img {
           width: 32px;
           height: 32px; }
 
-/* line 570, ../../resources/assets/scss/style.scss */
+/* line 574, ../../resources/assets/scss/style.scss */
 .item-info table {
   border: 0;
   width: 100%; }
-  /* line 574, ../../resources/assets/scss/style.scss */
+  /* line 578, ../../resources/assets/scss/style.scss */
   .item-info table tr td {
     color: #081c1a;
     padding: 5px 7px;
     border-bottom: 1px solid #d2dbda; }
 
-/* line 583, ../../resources/assets/scss/style.scss */
+/* line 587, ../../resources/assets/scss/style.scss */
 .item-number {
   width: 48.27586%;
   float: left;
   margin-right: 3.44828%; }
-  /* line 585, ../../resources/assets/scss/style.scss */
+  /* line 589, ../../resources/assets/scss/style.scss */
   .item-number h4 {
     color: #0f3430; }
-  /* line 589, ../../resources/assets/scss/style.scss */
+  /* line 593, ../../resources/assets/scss/style.scss */
   .item-number span.item-number-span {
     background-color: #f28d47;
     color: #FFFFFF;
@@ -1132,77 +1136,116 @@ ul.type-list li.active a {
     font-weight: 400px;
     padding: 0 5px; }
 
-/* line 598, ../../resources/assets/scss/style.scss */
+/* line 602, ../../resources/assets/scss/style.scss */
 .item-type {
   width: 48.27586%;
   float: right;
   margin-right: 0;
   text-align: center; }
-  /* line 601, ../../resources/assets/scss/style.scss */
+  /* line 605, ../../resources/assets/scss/style.scss */
   .item-type h4 {
     color: #FFFFFF;
     border-radius: 5px;
     font-weight: 400px;
     padding: 0 5px; }
-  /* line 607, ../../resources/assets/scss/style.scss */
+  /* line 611, ../../resources/assets/scss/style.scss */
   .item-type h4.room {
     background-color: #f28d47; }
-  /* line 610, ../../resources/assets/scss/style.scss */
+  /* line 614, ../../resources/assets/scss/style.scss */
   .item-type h4.flat {
     background-color: #35bbae; }
 
-/* line 616, ../../resources/assets/scss/style.scss */
+/* line 620, ../../resources/assets/scss/style.scss */
 .item-title h1 {
   margin-top: 15px;
   margin-bottom: 8px;
   color: #0b2825;
   line-height: 1.1em; }
 
-/* line 623, ../../resources/assets/scss/style.scss */
+/* line 627, ../../resources/assets/scss/style.scss */
 .item-road {
   margin-bottom: 15px; }
-  /* line 625, ../../resources/assets/scss/style.scss */
+  /* line 629, ../../resources/assets/scss/style.scss */
   .item-road h2 {
     color: #3f6461;
     font-size: 1.3rem;
     line-height: 1rem; }
 
-/* line 632, ../../resources/assets/scss/style.scss */
+/* line 636, ../../resources/assets/scss/style.scss */
 .item-contacts {
   margin: 10px 0; }
-  /* line 634, ../../resources/assets/scss/style.scss */
+  /* line 638, ../../resources/assets/scss/style.scss */
   .item-contacts table {
     width: 100%;
     padding: 7px 0; }
-    /* line 638, ../../resources/assets/scss/style.scss */
+    /* line 642, ../../resources/assets/scss/style.scss */
     .item-contacts table tr td {
       padding: 7px 5px;
       text-align: center; }
-      /* line 641, ../../resources/assets/scss/style.scss */
+      /* line 645, ../../resources/assets/scss/style.scss */
       .item-contacts table tr td a {
         font-size: 18px;
         text-decoration: none;
         color: #113c38; }
-        /* line 645, ../../resources/assets/scss/style.scss */
+        /* line 649, ../../resources/assets/scss/style.scss */
         .item-contacts table tr td a img {
           width: 32px;
           height: 32px; }
-        /* line 649, ../../resources/assets/scss/style.scss */
+        /* line 653, ../../resources/assets/scss/style.scss */
         .item-contacts table tr td a i {
           padding: 0 10px 0 0; }
-      /* line 654, ../../resources/assets/scss/style.scss */
+      /* line 658, ../../resources/assets/scss/style.scss */
       .item-contacts table tr td.call-back {
         padding: 20px 0; }
-        /* line 656, ../../resources/assets/scss/style.scss */
+        /* line 660, ../../resources/assets/scss/style.scss */
         .item-contacts table tr td.call-back a {
           border: 1px solid #a4e5df;
           padding: 10px;
           border-radius: 30px;
           font-size: 1.2rem; }
 
-/* line 667, ../../resources/assets/scss/style.scss */
+/* line 671, ../../resources/assets/scss/style.scss */
 .map-gic {
   height: 250px; }
+
+/* line 675, ../../resources/assets/scss/style.scss */
+#call-back-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9999; }
+  /* line 684, ../../resources/assets/scss/style.scss */
+  #call-back-wrap .form-wrapper {
+    position: relative;
+    margin: 130px auto 0;
+    width: 460px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #35bbae;
+    text-align: center; }
+    /* line 693, ../../resources/assets/scss/style.scss */
+    #call-back-wrap .form-wrapper .cbf-raw {
+      padding: 7px 0; }
+      /* line 696, ../../resources/assets/scss/style.scss */
+      #call-back-wrap .form-wrapper .cbf-raw input[type="text"], #call-back-wrap .form-wrapper .cbf-raw input[type="phone"], #call-back-wrap .form-wrapper .cbf-raw textarea {
+        width: 300px; }
+        /* line 699, ../../resources/assets/scss/style.scss */
+        #call-back-wrap .form-wrapper .cbf-raw input[type="text"].error, #call-back-wrap .form-wrapper .cbf-raw input[type="phone"].error, #call-back-wrap .form-wrapper .cbf-raw textarea.error {
+          border: 1px solid red; }
+    /* line 704, ../../resources/assets/scss/style.scss */
+    #call-back-wrap .form-wrapper .close-button {
+      position: absolute;
+      right: 15px;
+      top: 15px; }
+      /* line 708, ../../resources/assets/scss/style.scss */
+      #call-back-wrap .form-wrapper .close-button a {
+        font-size: 20px;
+        color: #081c1a;
+        text-decoration: none; }
 
 /* END APP STYLE */
 

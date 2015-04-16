@@ -102,7 +102,31 @@ module.exports = {
             console.error(ServerApiUrl.URL, status, err.toString());
         }.bind(this)
         }); 
-    }
+    }, 
+
+    
+    callBackSend: function(query) {
+        $.ajax({
+            url: ServerApiUrl.CALL_BACK,
+        dataType: 'json',
+        type: 'POST',
+        beforeSend: function(){
+            console.log(query);
+            },
+        data: {
+            '_token': $('meta[name=csrf-token]').attr('content'),
+            name:JSON.stringify(query.name),
+            phone:JSON.stringify(query.phone),
+            comment: JSON.stringify(query.comment)
+        },
+        success: function(data) {
+            console.log('success');
+        }.bind(this),
+        error: function(xhr, status, err) {
+            console.error(ServerApiUrl.CALL_BACK, status, err.toString());
+        }.bind(this)
+        }); 
+    }, 
 
 };
 

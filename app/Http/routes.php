@@ -41,7 +41,11 @@ Route::controllers([
 Route::group(['namespace' => 'Api', 'prefix' => 'api'], function() {
     Route::post('/flats/search', 'ApiController@flatSearch');
 
-   Route::post('/flats/id', 'ApiController@flatId');
+    Route::post('/flats/id', 'ApiController@flatId');
+
+    Route::post('/mail/callback', 'ApiController@callBack');
+
+    Route::get('/mail/callback', 'ApiController@callBack');
 
   /*  Route::get('/flats/geocode','ApiController@geocode');
 
