@@ -13,10 +13,11 @@
 
 /*Route::get('/', 'WelcomeController@index');
 
-Route::get('home', 'HomeController@index');
+Route::get('home', 'HomeController@index'); */
 
 Route::get('flats/{flat_id}', 'WelcomeController@flat');
 
+/*
 Route::get('/flat/search' , 'FlatsController@search');
 
 Route::get('/flat/', 'FlatsController@index');
@@ -38,9 +39,9 @@ Route::controllers([
 
 
 Route::group(['namespace' => 'Api', 'prefix' => 'api'], function() {
-    Route::post('/flats/search/', 'ApiController@flatSearch');
+    Route::post('/flats/search', 'ApiController@flatSearch');
 
-   Route::post('/flats/id/', 'ApiController@flatId');
+   Route::post('/flats/id', 'ApiController@flatId');
 
   /*  Route::get('/flats/geocode','ApiController@geocode');
 

@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Flat;
+use Session;
 
 class WelcomeController extends Controller {
 
@@ -45,7 +46,14 @@ class WelcomeController extends Controller {
 
     public function flat($flat_id) {
 
+        Session::push('user.fav', $flat_id);
+
         $flat = Flat::where('id', $flat_id)->firstOrFail();
+
+        if (Session::has('user.fav')) {
+          $fav = Session::get('user.fav');
+          echo $fav[0];
+        }
 
         return view('flat.index')->with([
             'flat' => $flat,

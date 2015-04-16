@@ -53,7 +53,7 @@ class FlatSearchService {
         }
 
 
-        return $baseQuery->paginate($limit);
+        return $baseQuery->orderBy('price', 'asc')->paginate($limit);
     }
 
 

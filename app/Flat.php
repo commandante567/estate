@@ -27,6 +27,13 @@ class Flat extends Model {
         'lat',
         'long'
     ];
+    protected $hidden = [
+        'agent',
+        'contact',
+        'comment'
+    ];
+
+
     public function albums()
     {
         return $this->hasMany('Image');
